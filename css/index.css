@@ -1,0 +1,80 @@
+html, body 
+{
+    height:100%;
+    margin:0;
+    background-color: #121219;
+}
+
+.introCol
+{
+    height:100%;
+    display:flex;
+    align-content: stretch;
+}
+
+.introText 
+{
+    width: 49%;
+}
+
+.introImage 
+{
+    width: 49%;
+    position:relative;
+}
+
+h4, h1
+{
+    font-family: Nunito;
+    padding-left: 30%;
+}
+
+h1
+{
+    color: white;
+    font-size: 3.2vw;
+    margin-top: 0;
+    position: relative;
+    top: 27%;
+}
+
+h4
+{
+    color: rgba(255, 255, 255, 0.807);
+    font-size: 1.1vw;
+    margin-bottom: 0;
+    top: 27%;
+    position: relative;
+}
+
+.introImage img
+{
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    border-radius: 100%;
+    width: 55%;
+    height: 50%;
+}
+
+.red
+{
+    color: #FF7C81;
+    text-decoration: none;
+}
+
+.introText p
+{
+    font-size: 1vw;
+}
+
+.socialLogos img
+{
+    width: 1.7vw;
+    padding-right: 1vw;
+}
+
+.socialLogos
+{
+    display: flex;
+}
