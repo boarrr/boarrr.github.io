@@ -1,80 +1,139 @@
-html, body 
-{
-	height:100%;
-	margin:0;
-	background-color: #121219;
+/* index.css */
+
+/* Basic Styles */
+body {
+	font-family: 'Nunito', sans-serif;
+	background-color: #121219; 
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
-.introCol
-{
-	height:100%;
-	display:flex;
-	align-content: stretch;
+h1 {
+	font-size: 3.2rem;
+	margin: 0;
 }
 
-.introText 
-{
-	width: 49%;
+h4 {
+	font-size: 1.1rem;
+	line-height: 1.5;
+	margin: 0;
 }
 
-.introImage 
-{
-	width: 49%;
-	position:relative;
-}
-
-h4, h1
-{
-	font-family: Nunito;
-	padding-left: 30%;
-}
-
-h1
-{
-	color: white;
-	font-size: 3.2vw;
-	margin-top: 0;
-	position: relative;
-	top: 27%;
-}
-
-h4
-{
-	color: rgba(255, 255, 255, 0.807);
-	font-size: 1.1vw;
-	margin-bottom: 0;
-	top: 27%;
-	position: relative;
-}
-
-.introImage img
-{
-	position: absolute;
-	top: 25%;
-	right: 25%;
-	border-radius: 100%;
-	width: 55%;
-	height: 50%;
-}
-
-.red
-{
+.red {
 	color: #FF7C81;
 	text-decoration: none;
 }
 
-.introText p
-{
-	font-size: 1vw;
-}
-
-.socialLogos img
-{
-	width: 1.7vw;
-	padding-right: 1vw;
-}
-
-.socialLogos
-{
+.introCol {
 	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.introText {
+	flex: 1;
+	max-width: 50%;
+}
+
+.introText h4:first-of-its-kind {
+	margin-bottom: 10px;
+}
+
+.introImage {
+	flex: 1;
+	max-width: 40%;
+	text-align: center;
+}
+
+.introImage img {
+	width: 100%;
+	max-width: 450px;
+	border-radius: 50%;
+}
+
+/* Social Logos */
+.socialLogos {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.socialLogos div {
+	margin-right: 10px;
+}
+
+.socialLogos img {
+	width: 30px; 
+	height: 30px; 
+}
+
+
+@media (max-width: 1024px) {
+	.introCol {
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.introText {
+	max-width: 100%;
+	text-align: center;
+	}
+
+	.introImage {
+	max-width: 100%;
+	margin-top: 20px;
+	}
+
+	.socialLogos {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	h4 {
+		font-size: 0.9rem;
+	}
+
+	.introText {
+		padding: 0 20px;
+	}
+
+	.socialLogos img {
+		width: 25px; 
+		height: 25px;
+	}
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	h4 {
+		font-size: 0.8rem;
+	}
+
+	.introText {
+		padding: 0 10px;
+	}
+
+	.socialLogos img {
+		width: 20px; 
+		height: 20px; 
+	}
 }
